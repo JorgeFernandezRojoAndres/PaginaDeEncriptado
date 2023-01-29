@@ -1,0 +1,384 @@
+*{
+    margin:  0;
+    
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    border-radius: 2%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #003366;
+    background-color: #111;
+    width: 100vw;
+    
+    place-items: center;
+}
+LogoImg1{
+    margin-top: 1%;
+    float: inherit;
+    margin-left: 10%;
+
+}
+
+button, button::after {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+button{
+    
+
+    text-align: center;
+    background: #14375A;
+    
+    border-radius: 10px ;
+    color: white;
+    margin-top: 5%;
+    margin-left: 10%;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 1.2em 3em;
+    
+}
+button:hover{
+    color: #0000001c;
+}
+.btn-size {
+    
+    width: 200px;
+    height: 80px;
+  }
+.heading{
+    
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+
+}
+
+.LogoImg1 {
+    float: left;
+    border: 2px solid #003366;
+}
+
+h1 {  
+    display: inline-block;
+    position: relative;
+    font-size: clamp(2rem, 15vw, 8rem);
+    line-height: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    color: #003366;
+}
+h1:before{  
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    color: #f8f7f6;
+    -webkit-text-stroke: 1px #f8f8f8;
+    border-right: 2px solid #f8f8f8;
+    overflow: hidden;
+    animation: move 5s alternate ease-in-out infinite;
+}
+h1 span {
+   font-size: 0.14em;
+    line-height: 1em;
+    letter-spacing: 0.02em;
+    display: block;
+    position: relative;
+}
+h1 span::before{
+     
+    content: attr(data-span);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: #f8f8f8;
+    -webkit-text-stroke: 0.6px #f8f8f8;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: move 5s alternate ease-in-out infinite;
+ }
+ #textoDesencriptado{
+   color: aliceblue;
+    background: #202435;
+    padding: 2em;
+    margin: 5%;
+    border-radius: 5%;
+    top: -150px;
+ }
+ textarea {
+    position: relative;
+    
+}
+ @keyframes move {
+    0%{ 
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+    
+ }  
+#botonCopiar{
+    visibility: hidden;
+    position: relative ;
+    top: -170px;
+    left: 120px;
+    
+}
+input
+{   
+    padding: 1.0%;
+    border-radius: 7px;
+    
+    width: 300px;
+    
+}
+    #imgDer{
+        margin-top: 10%;
+        width: 52%;
+    
+    
+}
+.img-right {
+    float: right;
+    width: 28%;
+    height: 80%;
+}
+#textoEncriptado {
+    position: relative ;
+    top: 140px;
+    left: 680px;
+    height: 220px;
+
+}
+
+button#botonDesencriptado
+{
+    position: relative ;
+    top: -375px;
+    left: -70px;
+} 
+button#botonEncriptado{
+    
+    position: relative ;
+    top: -515px;
+    left: 282px;
+    
+}
+#tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 600px) {
+    
+    *{
+        margin:  100;
+        
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+        border-radius: 2%;
+        border-width: 10px;
+        border-style: solid;
+        border-color: #003366;
+        background-color: #111;
+        width: 100vw;
+        
+        place-items: center;
+    }
+    LogoImg1{
+        margin-top: 1%;
+        float: inherit;
+        margin-left: 10%;
+    
+    }
+    
+    button, button::after {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    
+    button{
+        
+    
+        text-align: center;
+        background: #14375A;
+        
+        border-radius: 10px ;
+        color: white;
+        margin-top: 5%;
+        margin-left: 10%;
+        font-size: 1.3em;
+        font-weight: bold;
+        padding: 1.2em 3em;
+        
+    }
+    button:hover{
+        color: #0000001c;
+    }
+    .btn-size {
+        
+        width: 182px;
+        height: 64px;
+      }
+    .heading{
+        
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+    
+    }
+    
+    .LogoImg1 {
+        float: left;
+        border: 2px solid #003366;
+    }
+    
+    h1 {  
+        display: inline-block;
+        position: relative;
+        font-size: clamp(2rem, 15vw, 8rem);
+        line-height: 0.9em;
+        text-transform: uppercase;
+        letter-spacing: -0.01em;
+        color: #003366;
+    }
+    h1:before{  
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 100%;
+        color: #f8f7f6;
+        -webkit-text-stroke: 1px #f8f8f8;
+        border-right: 2px solid #f8f8f8;
+        overflow: hidden;
+        animation: move 5s alternate ease-in-out infinite;
+    }
+    h1 span {
+       font-size: 0.14em;
+        line-height: 1em;
+        letter-spacing: 0.02em;
+        display: block;
+        position: relative;
+    }
+    h1 span::before{
+         
+        content: attr(data-span);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        color: #f8f8f8;
+        -webkit-text-stroke: 0.6px #f8f8f8;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: move 5s alternate ease-in-out infinite;
+     }
+     #textoDesencriptado{
+        color: aliceblue;
+        background: #202435;
+        padding: 1em;
+        margin: 5%;
+        border-radius: 2%;
+        top: -20px;
+        width: 90%;
+        max-width: 349px;
+        
+        }
+     textarea {
+        position: relative;
+        
+    }
+     @keyframes move {
+        0%{ 
+            width: 0%;
+        }
+        100%{
+            width: 50%;
+        }
+        
+     }  
+    #botonCopiar{
+        visibility: hidden;
+        position: relative ;
+        top: -170px;
+        left: 120px;
+        
+    }
+    input
+    {   
+        padding: 1.0%;
+        border-radius: 7px;
+        
+        width: 300px;
+        
+    }
+        #imgDer{
+            margin-top: 17%;
+            width: 94%;
+        
+        
+    }
+    .img-right {
+        float: right;
+        width: 28%;
+        height: 80%;
+    }
+    #textoEncriptado {
+        position:relative;
+        top: 24px;
+        left: 46px;
+        height: 38  px;
+    
+    }
+    
+    button#botonDesencriptado
+    {
+        position: relative ;
+        top: -360px;
+        left: -95px;
+    } 
+    button#botonEncriptado{
+        
+        position: relative ;
+        top: -360px;
+        left: -50px;
+        
+    }
+    #tsparticles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 0;
+        margin: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilos.css">
+    <link rel="stylesheet" href="stilosparticulas.css">
+    <script type="text/javascript" src="scriptooo.js" ></script>
+    <title>Cifrado</title>
+   
+    
+</head>
+<body>
+    <div id="container">
+      <div class="logo"></div>
+    <div id="tsparticles"></div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script type="text/javascript">
+       
+        const options = {
+          background: {
+            color: "#000", // el color de fondo del lienzo
+          },
+          
+          interactivity: {
+            events: {
+              onClick: {
+                // esto maneja el evento de clic del mouse
+                enable: true,
+                mode: "push", // esto agrega partículas
+              },
+              
+              onHover: {
+                // this handles the mouse hover event
+                enable: true,
+                mode: "repulse", // esto maneja el evento de desplazamiento del mouse
+              },
+            },
+            modes: {
+              push: {
+                quantity: 6, // número de partículas a añadir
+              },
+              repulse: {
+                distance: 100, //la distancia de las partículas del ratón
+              },
+            },
+          },
+          particles: {
+            links: {
+              enable: true, // esto permite enlaces entre partículas
+              opacity: 0.3,
+              distance: 200,
+            },
+            move: {
+              enable: true, // this makes particles move
+              speed: { min: 1, max: 3 }, // esta es la velocidad de las partículas
+            },
+            opacity: {
+              value: { min: 0.5, max: 0.9 }, // esto establece la opacidad de las partículas
+            },
+            size: {
+              value: { min: 1, max: 3 }, // esto establece el tamaño de las partículas
+              
+            },
+          
+           
+          },
+          fullScreen: {
+                 enable: false,
+                 zIndex: 0,
+        }
+         
+        };
+        
+  
+        // tsParticles.load tiene dos parámetros, el primero es el id del contenedor, el segundo es un objeto con las opciones
+        tsParticles.load("tsparticles", options);
+      </script>
+  
+
+          
+    
+    <div class="heading">
+
+          
+    <img class="LogoImg1" src="logo.png" alt=""> 
+    <h1 data-text="CIFRADO">CIFRADO <Span data-Span="No te preocupes, siempre hay una forma de descifrarlo'">No te preocupes, siempre hay
+             una forma de descifrarlo'".</h1></Span>  
+    </div>
+    <div class="img-right">
+      <img src="1.png" id="imgDer">
+    </div>
+
+    <input type="text" id="textoEncriptado" placeholder="Ingrese el texto aqui"> 
+    <div class="left">  
+    <textarea name="resultado" id="textoDesencriptado" cols="30"
+     rows="10"></textarea>
+    </div>
+    
+
+    <button class="btn-size" type="button" id="botonEncriptado" data-text="Encriptar">Encriptar</button>
+    <button class="btn-size"type="button" id="botonDesencriptado" data-text="Desencriptar">Desencriptar</button>
+    <button type="button" id="botonCopiar" data-text="Copiar">Copiar</button>
+
+</body>
+
+<script>
+    var btn = document.querySelector("#botonEncriptado");
+    btn.onclick = encriptar;
+    var btn2 = document.querySelector("#botonDesencriptado");
+    btn2.onclick = desencriptar;
+    var btn3 = document.querySelector("#botonCopiar");
+    btn3.onclick = copiar;
+</script>
+</html>
+<!--Este código es una página HTML que contiene una serie de elementos de entrada y salida de datos, así como tres botones. Los elementos de entrada incluyen un campo de texto y un área de texto, mientras que el único elemento de salida es el área de texto. Los tres botones tienen etiquetas de identificación "botonEncriptado", "botonDesencriptado" y "botonCopiar", respectivamente.
+
+El código también incluye una etiqueta de enlace a un archivo CSS externo llamado "stilos.css" y una etiqueta de script que incluye un archivo JavaScript externo llamado "scriptooo.js".
+
+Por último, el código contiene un bloque de script que asigna funciones a cada uno de los botones. Cuando se hace clic en el primer botón, se ejecuta la función "encriptar", cuando se hace clic en el segundo botón, se ejecuta la función "desencriptar", y cuando se hace clic en el tercer botón, se ejecuta la función "Copiar".-->
